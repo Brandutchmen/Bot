@@ -3,8 +3,8 @@ import os, random
 class Audio():
 
     #Music Player Interface
-    #playerInterface = "afplay" #Mac
-    playerInterface = "mplayer" #Raspberry Pi
+    playerInterface = "afplay" #Mac
+    #playerInterface = "mplayer" #Raspberry Pi
 
 
     # main.py
@@ -12,7 +12,7 @@ class Audio():
     # music/
 
     # voice/(accent)/insults
-    # voice/(accent)/starters
+    # voice/(accent)/questions
     # voice/(accent)/carriers
     # voice/(accent)/enders
     # voice/(accent)/greetings
@@ -20,7 +20,7 @@ class Audio():
 
     musicDir = "music/"
     voiceDir = "voice/"
-    accent = "default"
+    accent = "american"
 
     def randomMusic():
         randomfile = random.choice(os.listdir(Audio.musicDir))
@@ -42,9 +42,9 @@ class Audio():
         file = Audio.voiceDir+Audio.accent+"/greetings/" + randomfile
         os.system (Audio.playerInterface + " " + file)
 
-    def randomStarter():
-        randomfile = random.choice(os.listdir(Audio.voiceDir+Audio.accent+"/starters/"))
-        file = Audio.voiceDir+Audio.accent+"/starters/" + randomfile
+    def randomQuestion():
+        randomfile = random.choice(os.listdir(Audio.voiceDir+Audio.accent+"/questions/"))
+        file = Audio.voiceDir+Audio.accent+"/questions/" + randomfile
         os.system (Audio.playerInterface + " " + file)
 
     def randomEnder():
