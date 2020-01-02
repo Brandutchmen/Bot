@@ -1,0 +1,24 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+    <div class="card bg-light m-3">
+      <div class="card-header bg-success text-white">Robot Dashboard</div>
+      <div class="card-body">
+          <a href="{{ url_for('starter') }}"><button class="col-12 mb-3 btn btn-success btn-lg">Starter</button>
+          <a href="{{ url_for('carrier') }}"><button class="col-12 mb-3 btn btn-warning btn-lg">Carrier</button>
+          <a href="{{ url_for('insult') }}"><button class="col-12 mb-3 btn btn-danger btn-lg">Insult</button>
+          <a href="{{ url_for('ender') }}"><button class="col-12 mb-3 btn btn-info btn-lg">Ender</button>
+          <a href="{{ url_for('greeting') }}"><button class="col-12 mb-3 btn btn-success btn-lg">Greeting</button>
+          <a href="{{ url_for('music') }}"><button class="col-12 mb-3 btn btn-secondary btn-lg">Music</button></a>
+      </div>
+    </div>
+
+
+</body>
+
+</html>
