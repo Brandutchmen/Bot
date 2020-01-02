@@ -3,8 +3,8 @@ import os, random
 class Audio():
 
     #Music Player Interface
-    playerInterface = "afplay" #Mac
-    #playerInterface = "mplayer" #Raspberry Pi
+    #playerInterface = "afplay" #Mac
+    playerInterface = "mplayer" #Raspberry Pi
 
 
     # main.py
